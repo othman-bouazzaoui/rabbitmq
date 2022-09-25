@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "77d5c439-0056-492d-ac9b-6b85150e3654",
+		"name": "Rabbit-MQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Publisher with topicExchange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Othman\",\r\n    \"lastName\" : \"BOUAZZAOUI\",\r\n    \"Salary\" : 1000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publisher with delayedMessageExchange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Othman\",\r\n    \"lastName\" : \"BOUAZZAOUI\",\r\n    \"Salary\" : 1000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/publish2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"publish2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
